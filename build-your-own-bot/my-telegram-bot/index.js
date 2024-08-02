@@ -4,8 +4,8 @@ var bodyParser = require('body-parser')
 const axios = require('axios')
 require('dotenv').config();
 
-const TELEGRAM_BOT_API_TOKEN = process.env.TELEGRAM_BOT_API_TOKEN || null
-const PORT = process.env.PORT || null
+const TELEGRAM_BOT_API_TOKEN = process.env.TELEGRAM_BOT_API_TOKEN
+const PORT = process.env.PORT
 // console.log(TELEGRAM_BOT_API_TOKEN)
 // console.log(PORT)
 
@@ -22,7 +22,7 @@ app.post('/new-message', function(req, res) {
     //Each message contains "text" and a "chat" object, which has an "id" which is the chat id
 
     if (!message || message.text.toLowerCase().indexOf("anuj") < 0) {
-		// In case a message is not present, or if our message does not have the word marco in it, do nothing and return an empty response
+		// In case a message is not present, or if our message does not have the word anuj in it, do nothing and return an empty response
 		return res.end()
 	}
 
@@ -49,6 +49,6 @@ app.post('/new-message', function(req, res) {
 })
 
 app.listen(PORT, function() {
-    console.log(`Telegram app listening on port 3000!`)
+    console.log(`Telegram app listening on port ${PORT}!`)
 })
 
