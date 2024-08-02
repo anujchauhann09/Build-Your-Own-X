@@ -1,0 +1,22 @@
+{
+  "name": "my-telegram-bot",
+  "version": "1.0.0",
+  "description": "My telegram bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "telegram bot",
+    "bot"
+  ],
+  "author": "Anuj Chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
