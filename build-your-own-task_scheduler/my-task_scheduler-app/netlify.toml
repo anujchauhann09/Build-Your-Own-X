@@ -1,4 +1,0 @@
-[build]
-base = "build-your-own-task_scheduler/my-task_scheduler-app"
-publish = "build-your-own-task_scheduler/my-task_scheduler-app/dist"
-command = "vite build"
